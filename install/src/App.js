@@ -1,12 +1,13 @@
-  import React from "react";
+import AllComponents from "./components/AllComponents";
+import { BrowserRouter } from 'react-router-dom'
+ function App() {
 
-function App() {
   return (
     <div className="App">
-      <>
-       
-      </>
-    </div>
+      <BrowserRouter>
+        <AllComponents />
+      </BrowserRouter>
+     </div>
   );
 }
 

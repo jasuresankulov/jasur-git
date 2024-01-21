@@ -1,0 +1,26 @@
+@use './resets';
+@import './samples';
+
+
+$info: #0099CC;
+$info-t: #33b5e5;
+
+%link {
+    @extend %link-style;
+}
+
+%info-btn {
+    @extend %btn;
+    padding: 10px 20px;
+    background-color: $info;
+    border: none;
+    color: snow;
+    border-radius: 50px;
+    width: 13%;
+    height: 45px;
+
+    &:hover {
+        background-color: lighter(lightblue, 10%);
+        transform: scale(0.90);
+    }
+}
