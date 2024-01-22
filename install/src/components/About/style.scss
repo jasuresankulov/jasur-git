@@ -1,0 +1,222 @@
+@import "../../assets/styles/settings";
+
+
+.travel-blog-wrapper {
+
+    .carousel-images {
+
+        display: grid;
+        position: absolute;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        top: 1171px;
+        left: 160px;
+
+        .first {
+            background-image: url('../../assets/images/rect1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgb(0, 0, 0, 0.1);
+            width: 360px;
+            height: 497px;
+
+            .carousel-text {
+                position: relative;
+                top: 210px;
+                color: snow;
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+
+                button {
+                    @extend %info-btn
+                }
+
+
+                .yello-text {
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .second {
+            background-image: url('../../assets/images/rect2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgb(0, 0, 0, 0.1);
+            width: 360px;
+            height: 497px;
+
+            .carousel-text {
+                position: relative;
+                top: 210px;
+                color: snow;
+                padding-left: 10px;
+
+                button {
+                    @extend %info-btn
+                }
+
+                .yello-text {
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .third {
+            background-image: url('../../assets/images/rect3.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgb(0, 0, 0, 0.1);
+            width: 360px;
+            height: 497px;
+
+            .carousel-text {
+                position: relative;
+                top: 210px;
+                color: snow;
+                padding-left: 10px;
+
+                button {
+                    @extend %info-btn
+                }
+
+                .yello-text {
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .fourth {
+            background-image: url('../../assets/images/rect4.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgb(0, 0, 0, 0.1);
+            width: 360px;
+            height: 497px;
+            border-radius: 5px;
+
+            .carousel-text {
+                position: relative;
+                top: 210px;
+                color: snow;
+                padding-left: 10px;
+
+                button {
+                    @extend %info-btn
+                }
+
+                .yello-text {
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
+    .travel-text {
+        position: absolute;
+        top: 1052px;
+        left: 160px;
+
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    .link {
+        position: absolute;
+        top: 1052px;
+        left: 1195px;
+        color: black;
+    }
+}
+
+.about-back-img {
+    position: relative;
+    top: 1100px;
+
+    background-image: url('../../assets/images/aboutBackImg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1071px;
+    height: 749px;
+    border-radius: 0px, 10px, 10px, 0px;
+
+    .about-desc {
+        position: absolute;
+        top: 138px;
+        left: 768px;
+        width: 542px;
+        height: 476px;
+        background-color: #EDEDED;
+        color: black;
+        border-radius: 10px;
+
+        h2,
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 40px;
+        }
+    }
+}
+
+ .value-wrapper {
+    position: relative;
+    top: 1100px;
+
+ 
+
+    .value-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 120px;
+        padding-left: 200px;
+    }
+
+    .value-item {
+        width: 500px;
+        display: flex;
+
+     
+
+        img {
+            margin-top: 40px;
+            margin-right: 10px;
+        }
+
+        div {
+            padding-top: 45px;
+
+            h2 {
+                margin-bottom: 30px;
+                margin-left: 15px;
+
+            }
+
+            p {
+                line-height: 20px;
+            }
+
+        }
+
+    }
+}
+
+ 

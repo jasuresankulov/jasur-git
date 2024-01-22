@@ -1,9 +1,54 @@
- function Item(props) {
-    return ( 
-        <>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel autem iste voluptates illum praesentium. Ut qui repellat molestiae fugit! A provident minus odio hic maiores ea tempore iusto nemo nostrum.</p>
-        </>
-     );
- }
+import { Link, useNavigate} from 'react-router-dom';
+import Heading from '../common/Heading';
  
- export default Item;
+
+function Item(props) {
+
+    const navigate = useNavigate()
+
+    const goToTeamsHash = () => {
+        navigate('/about')
+
+    }
+
+    return (
+        <main>
+            <div className="nav-wrapper2">
+                <div className="logo">
+                    <h2>
+                        <Link to={'/'}>
+                            <Heading></Heading>
+                        </Link>
+                    </h2>
+                </div>
+
+
+                <div className="menu">
+                <div className="nav-links">
+                    
+                    <Link to='/'>
+                        Главная
+                    </Link>
+                    <Link onClick={goToTeamsHash} to={'/blog'}>
+                        Экскурсия
+                    </Link>
+                    <Link to={'/contact'}>
+                        Личный кабинет
+                    </Link>
+                </div>
+            </div>
+
+
+
+            <div className="travel-text">
+                <h2>НАШИ ЭКСКУРСИИ</h2>
+             </div>
+
+
+
+            </div>
+        </main>
+    );
+}
+
+export default Item;

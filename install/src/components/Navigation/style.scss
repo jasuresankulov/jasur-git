@@ -6,12 +6,14 @@
    box-sizing: border-box;
 }
 
-header {
-   position: relative;
-
+ 
+   
 
 
    .nav-wrapper {
+       
+
+
 
       background-image: url('../../assets/images/img1.png');
       background-position: center;
@@ -25,13 +27,13 @@ header {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 20px 40px;
-      position: absolute;
+      position: relative;
 
 
       .menu {
          display: flex;
          justify-content: space-evenly;
-
+         
 
          .nav-links {
             margin-left: 30%;
@@ -66,6 +68,7 @@ header {
             font-family: 'Montserrat sans-serif';
             width: 592px;
             height: 88px;
+            color: snow;
          }
 
          h1 {
@@ -75,6 +78,7 @@ header {
             font-family: "Montserrat";
             width: 723px;
             height: 200px;
+            color: snow;
          }
 
          .vmeste {
@@ -126,7 +130,7 @@ header {
          grid-template-columns: 1fr 1fr;
          position: absolute;
          top: 675px;
-         left: 1450px;
+         left: 900px;
          gap: 15px;
       }
 
@@ -136,4 +140,4 @@ header {
       }
 
    }
-}
+ 
