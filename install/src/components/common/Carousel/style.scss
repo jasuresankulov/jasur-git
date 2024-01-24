@@ -1,8 +1,8 @@
-@import "../../assets/styles/settings";
+
 
 
 .travel-blog-wrapper {
-   
+    width: 100%;
     .carousel-images {
 
         display: grid;
@@ -141,102 +141,5 @@
         top: 1052px;
         left: 1195px;
         color: black;
-    }
-}
-
-.about-back-img {
-    position: relative;
-    top: 1100px;
-
-    background-image: url('../../assets/images/aboutBackImg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1071px;
-    height: 749px;
-    border-radius: 0px, 10px, 10px, 0px;
-
-    .about-desc {
-        position: absolute;
-        top: 138px;
-        left: 768px;
-        width: 542px;
-        height: 476px;
-        background-color: #EDEDED;
-        color: black;
-        border-radius: 10px;
-
-        h2,
-        p {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 30px 40px;
-        }
-    }
-}
-
-.value-wrapper {
-    position: relative;
-    top: 1100px;
-
-    .value-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 100px;
-        flex-direction: column;
-
-        button{
-            @extend %info-btn;
-            position: relative;
-
-            &::after {
-                content: ">";
-                position: absolute;
-                right: 95px;
-            }
-        }
-       
-        p{
-            width: 600px;
-            text-align: center;
-        }
-    }
-
-    .value-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        margin-top: 120px;
-        padding-left: 200px;
-    }
-
-    .value-item {
-        width: 500px;
-        display: flex;
-
-
-
-        img {
-            margin-top: 40px;
-            margin-right: 10px;
-        }
-
-        div {
-            padding-top: 45px;
-
-            h2 {
-                margin-bottom: 30px;
-                margin-left: 15px;
-
-            }
-
-            p {
-                line-height: 20px;
-            }
-
-        }
-
     }
 }

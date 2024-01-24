@@ -8,29 +8,36 @@ import ValueItem from './ValueItem';
 
 function Values() {
     const imgs = [first, second, third, fourth]
-    return ( 
+    return (
         <>
-        <div className="value-wrapper">
-            <h3>Виды экскурсий</h3>
+            <div className="value-wrapper">
+                <h3>Виды экскурсий</h3>
 
-            <div className="value-content">
-                {
-                    valuesDB.map((item, index) => {
-                        return(
-                            <ValueItem
-                            key={index}
-                            image={imgs[index]}
-                            title={item.title}
-                            subtitle={item.subtitle}
-                            />
-                        )
-                    })
-                }
+                <div className="value-content">
+                    {
+                        valuesDB.map((item, index) => {
+                            return (
+                                <ValueItem
+                                    key={index}
+                                    image={imgs[index]}
+                                    title={item.title}
+                                    subtitle={item.subtitle}
+                                />
+                            )
+                        })
+                    }
+                </div>
+                <div className="value-text">
+                    <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
+                    <br />
+                    <button className='info-btn'>
+                       <b> К Экскурсиям</b>
+                    </button>
+                </div>
             </div>
-       </div>
-       </>
-     );
-   
+        </>
+    );
+
 }
 
 

@@ -3,8 +3,8 @@ function ValueItem(props) {
         <div className="item-wrapper">
             <div className="value-item">
                 <img src={props.image}
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                     alt=""
                 />
                 <div>
