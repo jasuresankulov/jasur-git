@@ -1,0 +1,17 @@
+.gallery{
+    position: relative;
+    top: 400px;
+    
+    span{
+        position: absolute;
+        bottom: 950px;
+        left: 1200px;
+        
+    }
+    h2{
+        position: absolute;
+        bottom: 950px;
+        left: 80px;
+        font-size: 30px;
+    }
+}

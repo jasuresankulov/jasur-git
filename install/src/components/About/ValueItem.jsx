@@ -12,7 +12,9 @@ function ValueItem(props) {
                     <p>{props.subtitle}</p>
                 </div>
             </div>
+
         </div>
+        
     );
 }
 

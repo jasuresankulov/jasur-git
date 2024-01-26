@@ -1,0 +1,29 @@
+ .carousel2 {
+     position: relative;
+     top: 1000px;
+     margin: 80px;
+
+     h2{
+        position: absolute;
+        bottom: 350px;
+        left: 80px;
+        font-size: 30px;
+    }
+
+     .main-card {
+         display: flex;
+     }
+
+     .card {
+         background-color: rgb(138, 138, 138, 0.3);
+         margin-left: 10px;
+         padding: 30px;
+         border-radius: 15px;
+         display: flex;
+         flex-direction: row;
+
+        .text-slides{
+            margin-left: 15px;
+        }
+     }
+ }

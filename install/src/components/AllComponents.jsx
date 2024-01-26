@@ -2,6 +2,8 @@ import { useLocation, Route, Routes } from 'react-router-dom';
 import Navigation from "./Navigation"
 import About from "./About";
 import Blog from "./Blog";
+ 
+
 function AllComponents(props) {
     const location = useLocation()
     return (
@@ -16,6 +18,7 @@ function AllComponents(props) {
                 <Route path='/blog' element={<Blog />} />
 
             </Routes>
+         
         </>
     );
 }

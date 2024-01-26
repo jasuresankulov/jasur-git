@@ -6,6 +6,9 @@ import third from '../../assets/icons/3.png';
 import fourth from '../../assets/icons/4.png';
 import ValueItem from './ValueItem';
 
+
+
+
 function Values() {
     const imgs = [first, second, third, fourth]
     return (
@@ -20,13 +23,14 @@ function Values() {
                                 <ValueItem
                                     key={index}
                                     image={imgs[index]}
+                                  
                                     title={item.title}
                                     subtitle={item.subtitle}
                                 />
                             )
                         })
                     }
-                </div>
+                 </div>
                 <div className="value-text">
                     <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
                     <br />
