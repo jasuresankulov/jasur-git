@@ -1,0 +1,61 @@
+@import '../../assets/styles/settings';
+
+.footer-wrapper {
+    position: relative;
+    top: 602px;
+    bottom: 20px;
+    background-color: lightgray;
+    height: 30vh;
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 2fr 6fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+
+    .footer-heading {
+        padding: 20px 50px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        padding: 10px;
+
+     
+
+        .right{
+            div{
+                padding: 10px;
+            }
+        }
+
+        .twodiv{
+            div{
+            padding: 10px;
+           img {
+            padding-left: 10px;
+           }
+           }
+        }
+       
+ 
+        a {
+            display: block;
+            color: #282828;
+            text-decoration: none;
+
+
+            &:hover {
+                color: blue;
+            }
+        }
+
+
+    }
+}
