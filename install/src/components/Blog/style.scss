@@ -1,66 +1,191 @@
 @import "../Navigation/style.scss";
 
 .nav-wrapper2 {
-    background-image: url('../../assets/images/Rectangle1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: rgb(0, 0, 0, 0.3);
-    width: 100%;
-    height: 289px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px 40px;
+   background-image: url('../../assets/images/Rectangle1.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+   background-color: rgb(0, 0, 0, 0.3);
+   width: 100%;
+   height: 289px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 20px 40px;
 
 
 
-    .menu {
-        display: flex;
-        justify-content: space-evenly;
+   .menu {
+      display: flex;
+      justify-content: space-evenly;
 
 
-        .nav-links {
-           margin-left: 30%;
-           
-           a,
-           button {
-              @extend %link;
-              text-decoration: none;
-              cursor: pointer;
+      .nav-links {
+         margin-left: 30%;
 
-           }
-        }
-     }
+         a,
+         button {
+            @extend %link;
+            text-decoration: none;
+            cursor: pointer;
 
-
-     .travel-text {
-        display: flex;
-        flex-direction: column;
-
-
-        position: absolute;
-        top: 142px;
-        left: 160px;
-        width: 756px;
-        height: 88px;
-        display: flex;
-        flex-direction: column;
-        display: flex;
-         color: snow;
- 
-        h2 {
-           margin-bottom: 20px;
-           font-size: 72px;
-           font-weight: 700;
-           font-family: 'Montserrat sans-serif';
          }
+      }
+   }
 
 
+   .travel-text {
+      display: flex;
+      flex-direction: column;
 
-    }
+
+      position: absolute;
+      top: 142px;
+      left: 160px;
+      width: 756px;
+      height: 88px;
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      color: snow;
+
+      h2 {
+         margin-bottom: 20px;
+         font-size: 72px;
+         font-weight: 700;
+         font-family: 'Montserrat sans-serif';
+      }
+   }
 }
 
 
 
+ 
 
+
+ 
+
+.blog-wrapper {
+   background-color:gray;
+   width: 100%;
+   height: 290vh;
+
+   .second-blog-container {
+      position: relative;
+      top: 100px;
+
+      .cont2 {
+         position: absolute;
+       
+          
+
+         .second-con {
+            width: 900px;
+            height: 330px;
+            background-color: white;
+            margin-left: 20px;
+            border-radius: 10px;
+            display: flex;
+            position: relative;
+            bottom: 920px;
+            left: 550px;
+           
+
+            .texts{
+               b{
+                  font-size:20px;
+               }
+               span {
+                  color: rgb(162, 162, 0);
+               }
+               p{
+                  padding: 20px;
+                  padding-top: 50px;
+                  font-size: 20px;
+               }
+            }
+         }
+
+      }
+
+      .main-container {
+         display: flex;
+         position: relative;
+         left: 157px;
+
+
+
+      }
+
+      .first-con {
+         width: 25%;
+         height: 1000px;
+         background-color: white;
+         padding-right: 20%;
+         position: relative;
+         border-radius: 10px;
+      }
+   }
+
+
+
+
+
+   .blog-container {
+
+      width: 80%;
+      height: 35vh;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 auto;
+
+      .small-text {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         cursor: pointer;
+         padding: 50px;
+
+         div {
+            width: 163px;
+            height: 1px;
+            background-color: black;
+         }
+      }
+
+      .input-btn {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         .container {
+
+            display: flex;
+
+            img {
+               position: relative;
+               right: 30px;
+               top: 10px;
+            }
+         }
+
+         button {
+            @extend %info-btn;
+            border-radius: 10px;
+            margin-left: 5px;
+            width: 25%;
+         }
+
+         input {
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: rgb(221, 220, 220);
+            font-size: 15px;
+            font-weight: 700;
+         }
+      }
+   }
+}

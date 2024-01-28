@@ -5,8 +5,7 @@ import Values from "./Values";
 import Gallery from "./Gallery";
 import CarouselComponent from "../common/Carousel";
 import ContactsForm from "../ContactsForm";
-import Footer from "../Footer";
-
+ 
 
 function About() {
         return (

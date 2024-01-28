@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <ToastContainer />
       <BrowserRouter>
-        <AllComponents />s
+        <AllComponents />
       </BrowserRouter>
     </div>
   );
