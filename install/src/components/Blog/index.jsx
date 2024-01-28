@@ -11,7 +11,7 @@ function Blog() {
 
      return (
 
-          <>
+          <main>
                <Item />
                <div className="blog-wrapper">
                     <br />
@@ -50,12 +50,89 @@ function Blog() {
                          </div>
                     </div>
 
+
+
+
+
+
+
+
                     <div className="second-blog-container">
                          <div className="main-container">
                               <div className="first-con">
+                                   <h2>Фильтры</h2>
+                                   <div className="price">
+                                        <b>Стоимость</b>
+                                        <br /><br /><div className="input">
+                                             <input type="text" value={"1600"} />
+                                             <input type="text" value={'4000'} />
+                                        </div>
+                                        <div className="range">
+                                             <br /><br /><input type="range" />
+                                        </div>
+                                   </div>
+                                   <hr />
+                                   <div className="people">
+                                        <h3>Количество человек</h3>
 
-                              </div>
-                         </div>
+                                        <div>
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                        </div>
+                                   </div>
+                                   <hr />
+                                   <div className="radio-input">
+                                        <b>Место</b>
+                                        <div>
+                                             <input type="radio" name="city" checked/>
+                                             <label htmlFor="">Абхазия</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Америка</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Сочи</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Адлер</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Адлер</label>
+                                        </div>
+                                   </div>
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <hr />
+                                   <div className="b"><b>Длительность</b></div>
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <hr />
+                                   <div className="b2"><b>Дата</b></div>
+
+                               </div>
+                          </div>
+
+
+
+
+
+
                          <div className="cont2">
                               <div className="second-con">
                                    <img src={Tur} width={250} height={330} alt="" />
@@ -64,6 +141,7 @@ function Blog() {
                                         <br />
                                         <b>Золотое кольцо Абхазии (из Адлера)</b>
                                         <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+                                        <button className="info-btn">Пдробнее</button>
                                    </div>
                               </div>
                               <br />
@@ -75,6 +153,8 @@ function Blog() {
                                         <br />
                                         <b>Золотое кольцо Абхазии (из Адлера)</b>
                                         <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+                                        <button className="info-btn">Пдробнее</button>
+
                                    </div>
 
                               </div>
@@ -87,6 +167,8 @@ function Blog() {
                                         <br />
                                         <b>Золотое кольцо Абхазии (из Адлера)</b>
                                         <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+                                        <button className="info-btn">Пдробнее</button>
+
                                    </div>
 
                               </div>
@@ -99,6 +181,8 @@ function Blog() {
                                         <br />
                                         <b>Золотое кольцо Абхазии (из Адлера)</b>
                                         <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+                                        <button className="info-btn">Пдробнее</button>
+
                                    </div>
 
                               </div>
@@ -111,7 +195,7 @@ function Blog() {
                          <Footer />
                     </div>
                </div>
-          </>
+          </main>
 
      );
 

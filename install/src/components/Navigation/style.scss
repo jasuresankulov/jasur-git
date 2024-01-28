@@ -6,137 +6,197 @@
    box-sizing: border-box;
 }
 
- 
-   
-
-
-   .nav-wrapper {
-         width: 100%;
 
 
 
-      background-image: url('../../assets/images/img1.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-blend-mode: darken;
-      background-color: rgb(0, 0, 0, 0.3);
-       height: 789px;
-      color: snow;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 20px 40px;
-      position: relative;
+
+.nav-wrapper {
+   width: 100%;
 
 
-      .menu {
-         display: flex;
-         justify-content: space-evenly;
-         
 
-         .nav-links {
-            margin-left: 30%;
-            
-            a,
-            button {
-               @extend %link;
-               text-decoration: none;
-               cursor: pointer;
+   background-image: url('../../assets/images/img1.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+   background-color: rgb(0, 0, 0, 0.3);
+   height: 789px;
+   color: snow;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 20px 40px;
+   position: relative;
 
-            }
+
+   .menu {
+      display: flex;
+      justify-content: space-evenly;
+
+
+      .nav-links {
+         margin-left: 30%;
+
+         a,
+         button {
+            @extend %link;
+            text-decoration: none;
+            cursor: pointer;
+
+         }
+      }
+   }
+
+   .travel-text {
+      display: flex;
+      flex-direction: column;
+
+
+      position: absolute;
+      top: 237px;
+      left: 160px;
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+         margin-bottom: 20px;
+         font-size: 72px;
+         font-weight: 700;
+         font-family: 'Montserrat sans-serif';
+         width: 592px;
+         height: 88px;
+         color: snow;
+      }
+
+      h1 {
+         margin-top: 10px;
+         font-size: 96px;
+         font-weight: 900;
+         font-family: "Montserrat";
+         width: 723px;
+         height: 200px;
+         color: snow;
+      }
+
+      .vmeste {
+         position: absolute;
+         left: 50%;
+         top: 22%;
+         color: yellow;
+         font-family: 'mr_KindlyJasmineG sans-serif';
+         font-weight: 400;
+         font-size: 64px;
+         height: 64px;
+         display: grid;
+
+         @media screen and (max-width: 768px) {
+            top: 18%;
+            left: 53%;
+            font-size: 40px;
          }
       }
 
-      .travel-text {
-         display: flex;
-         flex-direction: column;
-
-
-         position: absolute;
-         top: 237px;
-         left: 160px;
-         display: flex;
-         flex-direction: column;
-         display: flex;
-         flex-direction: column;
+      @media screen and (max-width: 767px) {
+         h1 { 
+            font-size: 76px;
+            margin: 0;
+         }
 
          h2 {
-            margin-bottom: 20px;
-            font-size: 72px;
-            font-weight: 700;
-            font-family: 'Montserrat sans-serif';
-            width: 592px;
-            height: 88px;
-            color: snow;
-         }
-
-         h1 {
-            margin-top: 10px;
-            font-size: 96px;
-            font-weight: 900;
-            font-family: "Montserrat";
-            width: 723px;
-            height: 200px;
-            color: snow;
-         }
-
-         .vmeste {
-            position: absolute;
-            left: 50%;
-            top: 22%;
-            color: yellow;
-            font-family: 'mr_KindlyJasmineG sans-serif';
-            font-weight: 400;
-            font-size: 64px;
-            height: 64px;
-            display: grid;
-
+            font-size: 60px;
          }
       }
+   }
 
-      button {
-         @extend %info-btn;
+   button {
+      @extend %info-btn;
+      position: absolute;
+      top: 491px;
+      left: 158px;
+   }
+
+   .icons {
+      width: 32px;
+      height: 32px;
+
+      .ic1 {
          position: absolute;
-         top: 491px;
-         left: 158px;
+         top: 333px;
+         left: 90%;
       }
 
-      .icons {
-         width: 32px;
-         height: 32px;
-
-         .ic1 {
-            position: absolute;
-            top: 333px;
-            left: 90%;
-         }
-
-         .ic2 {
-            position: absolute;
-            top: 373px;
-            left: 90%;
-         }
-
-         .ic3 {
-            position: absolute;
-            top: 413px;
-            left: 90%;
-         }
-      }
-
-      .second-images {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
+      .ic2 {
          position: absolute;
-         top: 675px;
-         left: 900px;
-         gap: 15px;
+         top: 373px;
+         left: 90%;
       }
 
-      .img3 {
-         top: 675px;
-         left: 1505px;
+      .ic3 {
+         position: absolute;
+         top: 413px;
+         left: 90%;
       }
 
+
+      @media screen and (max-width: 768px) {
+         .icon-1 {
+            top: 520px;
+         }
+
+         .icon-2 {
+            top: 560px;
+         }
+
+         .icon-3 {
+            top: 600px;
+         }
+      }
+    }
+
+   .second-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: absolute;
+      top: 675px;
+      left: 900px;
+      gap: 15px;
+
+
+      @media screen and (min-width: 1910px) {
+         position: relative;
+         top: 370px;
+         left: 344px;
+      }
+
+      @media screen and (max-width: 1090px) {
+         position: relative;
+         top: 370px;
+         left: 50px;
+      }
+
+      @media screen and (max-width: 800px) {
+         width: 400px;
+         top: 390px;
+         left: 50px;
+      }
+   }
+
+   @media screen and (max-width: 1920px) {
+      width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+      width: 100%;
+  }
+
+  @media screen and (max-width: 850px) {
+      width: 100%;
+  }
+     .img3 {
+      top: 675px;
+      left: 1505px;
    }
  
+}
