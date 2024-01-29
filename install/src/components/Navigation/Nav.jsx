@@ -49,10 +49,13 @@ function Nav(props) {
                 <span className='vmeste'>вместе с</span>
                 <h1>Pero travel</h1>
             </div>
-
+            
+            <Link to={'./blog'}>
             <button className='info-btn'>
                 К экскурсиям
             </button>
+            </Link>
+        
 
             <div className="icons">
                 <Link to={'/'}>

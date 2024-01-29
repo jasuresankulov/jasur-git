@@ -2,10 +2,10 @@ import EmailImg from '../../assets/images/emailImg.png';
 import './style.scss'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import {ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import Footer from '../Footer';
 
- 
+
 
 function ContactsForm() {
 
@@ -39,7 +39,7 @@ function ContactsForm() {
                     theme: 'dark'
                 })
             })
-            e.target.reset()
+        e.target.reset()
     }
 
 
@@ -54,26 +54,29 @@ function ContactsForm() {
                         <input type="text" placeholder='Имя'
                             onChange={fireSetForm} required name='name'
                         />
-                        
+
                     </div>
                     <div className="hr">
-                        <input type="text" placeholder='Номер Телефона' 
+                        <input type="text" placeholder='Номер Телефона'
                             onChange={fireSetForm} required name='number'
                         />
-                        
+
                     </div>
                     <div className="hr">
                         <input type="text" placeholder='Почта'
                             onChange={fireSetForm} required name='email'
                         />
-                        
+
                     </div>
 
                 </div>
-                <button  className='info-btn'>Подать Заявку</button>
-                <ToastContainer/>
+                <button className='info-btn'>Подать Заявку</button>
+                <ToastContainer />
             </form>
-            <Footer/>
+            <div className="footer-about">
+                <Footer />
+            </div>
+
         </div>
     );
 }

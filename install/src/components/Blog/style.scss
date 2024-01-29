@@ -1,27 +1,24 @@
-@import "../Navigation/style.scss";
+@import '../../assets/styles/settings';
 
-.nav-wrapper2 {
-   background-image: url('../../assets/images/Rectangle1.png');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-blend-mode: darken;
-   background-color: rgb(0, 0, 0, 0.3);
+.navbar-item {
    width: 100%;
-   height: 289px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   padding: 20px 40px;
 
-
-
-   .menu {
-      display: flex;
-      justify-content: space-evenly;
+   .nav-wrapper2 {
+      background-image: url('../../assets/images/Rectangle1.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      background-color: rgb(0, 0, 0, 0.3);
+      width: 100%;
+      height: 350px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      padding: 20px 40px;
 
 
       .nav-links {
-         margin-left: 30%;
+         width: 400px;
 
          a,
          button {
@@ -30,259 +27,366 @@
             cursor: pointer;
 
          }
+
+         @media screen and (max-width:770px) {}
       }
    }
 
-
    .travel-text {
-      display: flex;
-      flex-direction: column;
-
-
-      position: absolute;
-      top: 142px;
+      position: relative;
+      bottom: 20px;
       left: 160px;
       width: 756px;
       height: 88px;
-      display: flex;
-      flex-direction: column;
-      display: flex;
       color: snow;
 
       h2 {
-         margin-bottom: 20px;
+         text-align: center;
          font-size: 72px;
          font-weight: 700;
-         font-family: 'Montserrat sans-serif';
+         font-family: 'Montserrat';
+
+         @media screen and (min-width: 590px) and (max-width: 810px) {
+            font-size: 45px;
+            text-align: left;
+            position: absolute;
+            right: 590px;
+         }
       }
    }
 }
 
-
-
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-
-
-
-
-.blog-wrapper {
-   background-color: rgb(224, 224, 224);
-   width: 100%;
-   height: 490vh;
+.blog-container {
+   width: 1920px;
    margin: 0 auto;
+   background-color: lightgray;
 
-
-   .second-blog-container {
-      position: relative;
-      top: 100px;
-
-      .cont2 {
-         position: relative;
-
-
-
-         .second-con {
-            width: 900px;
-            height: 330px;
-            background-color: white;
-            margin-left: 20px;
-            border-radius: 10px;
-            display: flex;
-            position: relative;
-            bottom: 920px;
-            left: 550px;
-
-
-            .texts {
-               button {
-                  @extend %info-btn;
-                  position: relative;
-                  left: 50px;
-               }
-
-               b {
-                  font-size: 20px;
-                  position: relative;
-                  top: 15px;
-                  left: 55px;
-               }
-
-               span {
-                  position: relative;
-                  top: 10px;
-                  left: 55px;
-                  color: rgb(162, 162, 0);
-               }
-
-               p {
-                  padding: 50px;
-                  padding-top: 50px;
-                  font-size: 20px;
-               }
-            }
-         }
-
-      }
-
-      .main-container {
-         display: flex;
-         position: relative;
-         right: -150px;
-
-         .first-con {
-            width: 25%;
-            height: 1000px;
-            background-color: white;
-            padding-right: 20%;
-            position: relative;
-            border-radius: 10px;
-
-            .b,
-            .b2{
-               position: relative;
-               left: 50px;
-               top: 20px;
-               font-size: large;
-            }
-
-
-            h2 {
-               padding: 20px 30px;
-            }
-
-            b {
-               padding: 10px;
-            }
-
-            hr {
-               width: 380px;
-            }
-
-
-            .price {
-               padding: 30px;
-
-               .range {
-                  padding-left: 20px;
-                 
-               }
-
-               .input {
-                  display: flex;
-
-                  input {
-                     border-radius: 40px;
-                     padding: 10px;
-                     width: 150px;
-                  }
-               }
-            }
-
-            .people {
-                  h3{padding-left: 60px; padding-top: 20px;}
-               div {
-                  display: inline-block;
-                  display: grid;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  gap: 10px;
-                  padding: 60px;
-
-
-                  input {
-                     text-align: center;
-                     width: 83px;
-                     height: 30px;
-                     border-radius: 50px;
-                     border: 1px solid gray;
-                  }
-               }
-            }
-
-            .radio-input{
-               position: relative;
-               left: 50px;
-               top: 50px;
-
-               div{
-                  display: flex;
-                  padding: 3px;
-                  font-size: large;
-                  color: rgb(91, 91, 91);
-               }
-            }
-
-
-         }
-
-      }
-
-
-   }
-
-
-
-
-
-   .blog-container {
-
-      width: 80%;
-      height: 35vh;
-      background-color: white;
-      border-radius: 10px;
+   .small-text {
+      width: 70%;
       margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      height: 160px;
+      background-color: white;
+      border-radius: 10px 10px 0 0;
 
-      .small-text {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         cursor: pointer;
-         padding: 50px;
+      .span {
+         margin-bottom: 30px;
+         padding: 10px 20px;
+         border-bottom: 2px solid gray;
 
-         div {
-            width: 163px;
-            height: 1px;
-            background-color: black;
+         &:hover {
+            color: lightblue;
+            border-bottom: 2px solid lightblue;
+         }
+
+         &:active {
+            color: lightblue;
+            border-bottom: 2px solid lightblue;
          }
       }
+   }
+   .blog-wrapper {
+      width: 70%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 0 0 10px 10px;
 
       .input-btn {
          width: 100%;
+         padding-bottom: 10%;
          display: flex;
+         flex-direction: row;
          justify-content: center;
-         align-items: center;
 
-         .container {
-
-            display: flex;
-
-            img {
-               position: relative;
-               right: 30px;
-               top: 10px;
-            }
+         img {
+            width: 23px;
+            position: relative;
+            top: 5px;
+            right: 50px;
          }
 
          button {
+            margin-top: 10px;
             @extend %info-btn;
             border-radius: 10px;
             margin-left: 5px;
-            width: 25%;
+            width: 233px;
          }
 
          input {
+            width: 70%;
             border: none;
-            border-radius: 5px;
+            border-radius: 7px;
+            margin: 10px;
             padding: 15px;
-            background-color: rgb(221, 220, 220);
+            background-color: white;
             font-size: 15px;
-            font-weight: 700;
+            font-weight: 400;
+            box-shadow: 1px 1px 5px lightgray;
+         }
+      }
+      @media screen and (min-width: 590px) and (max-width: 770px) {
+         font-size: 15px;
+         width: 90%;
+      }
+   }
+
+   .our-blogs {
+      width: 70%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 2.5fr;
+      margin-bottom: 50px;
+
+      .first-container {
+         margin-top: 100px;
+
+         .content {
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 2.3fr;
+            margin: 20px 0;
+
+            .text-content {
+               padding: 30px;
+            }
+
+         }
+
+         h2 {
+            margin: 30px;
+            color: lightblue;
+            font-size: 30px;
+         }
+      }
+
+      .second-container {
+         border-radius: 10px;
+         width: 90%;
+         margin: 120px auto;
+         height: 1455px;
+         padding: 40px;
+         background-color: white;
+
+      }
+
+   }
+
+
+   @media screen and (max-width: 1920px) {
+      width: 100%;
+   }
+
+
+}
+
+.burger-menu-wrapper {
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+   align-items: center;
+
+   div {
+      width: 100%;
+      height: 5px;
+      background-color: lightblue;
+      border-radius: 5px;
+      margin-top: 5px;
+      transform-origin: left;
+   }
+}
+
+.burger-menu-wrapper,
+#burger-menu-toggler {
+   width: 50px;
+   height: 50px;
+   border-radius: 10px;
+   position: absolute;
+   right: 40px;
+   top: 15px;
+   display: none;
+   z-index: 11;
+}
+
+#burger-menu-toggler {
+   opacity: 0;
+   z-index: 12;
+}
+
+@media (max-width: $large-screen) {
+   .nav-wrapper {
+      .menu {
+         padding: 0;
+      }
+   }
+}
+
+@media (max-width: 800px) {
+
+   .burger-menu-wrapper,
+   #burger-menu-toggler {
+      display: flex;
+   }
+
+   .burger-menu-wrapper {
+      &.opened {
+         div {
+            margin: 5px 0;
+         }
+
+         .middle {
+            opacity: 0;
+         }
+
+         .top {
+            transform: rotate(45deg);
+         }
+
+         .bottom {
+            transform: rotate(-45deg);
          }
       }
    }
+
+
+   .nav-links {
+      width: 0;
+      height: 500px;
+      overflow: hidden;
+      display: none;
+      color: aqua;
+   }
+
+   #burger-menu-toggler:checked+.nav-wrapper2>.nav-links {
+      width: 450px;
+      position: relative;
+      left: 65%;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+
+      .nav-links {
+         display: flex;
+         flex-direction: column;
+
+         button {
+            text-align: right;
+         }
+      }
+
+      * {
+         margin-top: 10px;
+      }
+   }
+}
+
+
+
+@media (max-width: $small-screen) {
+   #burger-menu-toggler:checked+.nav-wrapper>.menu {
+      width: 100%;
+   }
+}
+
+.footer {
+   position: relative;
+   bottom: 0;
+}
+
+
+.main-container {
+   display: flex;
+   position: relative;
+
+   .first-con {
+      width: 25%;
+      height: 1000px;
+      padding-right: 20%;
+      position: relative;
+      border-radius: 10px;
+
+      .b,
+      .b2{
+         position: relative;
+         left: 50px;
+         top: 20px;
+         font-size: large;
+      }
+
+
+      h2 {
+         padding: 20px 30px;
+      }
+
+      b {
+         padding: 10px;
+      }
+
+      hr {
+         width: 380px;
+      }
+
+
+      .price {
+         padding: 30px;
+
+         .range {
+            padding-left: 20px;
+           
+         }
+
+         .input {
+            display: flex;
+
+            input {
+               border-radius: 40px;
+               padding: 10px;
+               width: 150px;
+            }
+         }
+      }
+
+      .people {
+            h3{padding-left: 60px; padding-top: 20px;}
+         div {
+            display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 60px;
+
+
+            input {
+               text-align: center;
+               width: 83px;
+               height: 30px;
+               border-radius: 50px;
+               border: 1px solid gray;
+            }
+         }
+      }
+
+      .radio-input{
+         position: relative;
+         left: 50px;
+         top: 50px;
+
+         div{
+            display: flex;
+            padding: 3px;
+            font-size: large;
+            color: rgb(91, 91, 91);
+         }
+      }
+
+
+   }
+
 }

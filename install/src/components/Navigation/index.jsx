@@ -7,7 +7,7 @@ function Navigation() {
     return (
         <div>
             <header>
-                <div className={burgerMenuOpened ? 'burger-menu-wrapper opened' : 'burger-menu wrapper'}>
+                <div className={burgerMenuOpened ? 'burger-menu-wrapper opened' : 'burger-menu-wrapper'}>
                     <div className="top"></div>
                     <div className="middle"></div>
                     <div className="bottom"></div>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { Link, useNavigate } from 'react-router-dom';
 
 import './slide.scss'
 import slid1 from '../../../assets/images/slides/slide1.png'
@@ -21,12 +22,20 @@ function Arrow(props) {
 
 
 function CarouselComponent() {
+    const navigate = useNavigate()
+
+
+
+    const goToTeamsHash = () => {
+        navigate('/third')
+
+    }
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         nextArrow: <Arrow />,
         prevArrow: <Arrow />,
         initialSlide: 0,
@@ -43,7 +52,7 @@ function CarouselComponent() {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 2,
                     initialSlide: 2
                 }
@@ -60,6 +69,9 @@ function CarouselComponent() {
                         <img src={slid1} width={200} alt="" />
                         <div className="text-slides">
                             <b>Иван Иванов</b>
+                            <Link onClick={goToTeamsHash} to={'/third'}>
+                            <button>hhh</button>
+                            </Link>
                             <br />
                             <br />
                             <br />

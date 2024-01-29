@@ -5,15 +5,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 85vh;
+    height: 668px;
     position: relative;
     top: 1100px;
+
+    .footer-about{
+        position: relative;
+        top: 650px;
+       
+    }
+
 
     form {
         background-color: rbga(255, 0, 0, 0.5);
         backdrop-filter: blur(40px);
         opacity: 0.9;
-        height: 85vh;
+        height: 668px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -71,6 +78,20 @@
 
             hr {
                 margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: $large-screen) {
+            padding: 30px;
+        }
+        @media (max-width: $medium-screen) {
+           
+            img{
+                height: 250px;
+            }
+            form{
+                padding: 55px;
+               
             }
         }
     }
