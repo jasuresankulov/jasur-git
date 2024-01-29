@@ -24,8 +24,6 @@ function Arrow(props) {
 function CarouselComponent() {
     const navigate = useNavigate()
 
-
-
     const goToTeamsHash = () => {
         navigate('/third')
 

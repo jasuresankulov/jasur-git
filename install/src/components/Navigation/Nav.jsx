@@ -12,7 +12,6 @@ function Nav(props) {
 
     const goToTeamsHash = () => {
         navigate('/about')
-
     }
     return (
         <div className="nav-wrapper">

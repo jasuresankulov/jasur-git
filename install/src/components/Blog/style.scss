@@ -25,10 +25,13 @@
             @extend %link;
             text-decoration: none;
             cursor: pointer;
+          }
 
+          @media screen and (max-width:770px) {
+            margin-right: 90px;
          }
 
-         @media screen and (max-width:770px) {}
+         
       }
    }
 
@@ -88,6 +91,14 @@
             border-bottom: 2px solid lightblue;
          }
       }
+
+      @media screen and (min-width: 600px) and (max-width: 770px) {
+         width: 70%;
+         font-size: 10px;
+      }
+
+
+
    }
    .blog-wrapper {
       width: 70%;
@@ -107,6 +118,14 @@
             position: relative;
             top: 5px;
             right: 50px;
+
+
+            @media screen and (min-width: 1020px) and (max-width: 1090px) {
+               position: relative;
+               top: -75px;
+               right: -120px;
+            }
+
          }
 
          button {
@@ -115,6 +134,12 @@
             border-radius: 10px;
             margin-left: 5px;
             width: 233px;
+
+
+            @media screen and (min-width: 600px) and (max-width: 770px) {
+               width: 200px;
+            }
+
          }
 
          input {
@@ -128,6 +153,14 @@
             font-weight: 400;
             box-shadow: 1px 1px 5px lightgray;
          }
+
+
+         @media screen and (min-width: 1020px) and (max-width: 1090px) {
+            font-size: 5px;
+            width: 100%;
+         }
+
+
       }
       @media screen and (min-width: 590px) and (max-width: 770px) {
          font-size: 15px;
