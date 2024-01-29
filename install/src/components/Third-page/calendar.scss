@@ -1,0 +1,49 @@
+
+
+.calendar-wrapper {
+    position: relative;
+    bottom: 650px;
+    left: 600px;
+    width: 490px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    .days {
+        position: relative;
+        top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        font-size: 18px;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+
+       span {
+        border-radius: 50%;
+        width: 30px;
+        height:30px;
+        &:hover {
+            background-color: rgb(130, 213, 241);
+            color: rgb(96, 96, 248);
+        }
+       }
+    }
+
+    .weeks {
+        margin-top: 30px;
+        display: flex;
+        padding-left: 30px;
+
+        b {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}

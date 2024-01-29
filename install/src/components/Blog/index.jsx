@@ -6,7 +6,7 @@ import geolocationImg from '../../assets/icons/map1.png'
 import calendarImg from '../../assets/icons/calen.png'
 import peopleImg from '../../assets/icons/people.png'
 import tourImg from '../../assets/images/tur.png'
-function Blog() {
+ function Blog() {
 
      return (
 
@@ -168,6 +168,7 @@ function Blog() {
                <div className="footer">
                     <Footer />
                </div>
+            
           </div>
                );
 
