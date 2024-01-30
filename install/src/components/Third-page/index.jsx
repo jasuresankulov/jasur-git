@@ -2,17 +2,17 @@ import './style.scss'
 import Heading from '../common/Heading';
 import { Link, useNavigate } from 'react-router-dom';
 import ThirdItem from './ThirdItem';
-
+import Carousel3 from './Carousel3';
 import PriceHour1 from '../../assets/thridImages/priceHour1.png'
 import PriceHour2 from '../../assets/thridImages/priceHour2.png'
 import PriceHour3 from '../../assets/thridImages/priceHour3.png'
 import SecondImg from '../../assets/thridImages/secondImg.png'
 
 import Calendar from './Calendar';
-
+import ThirdGallery from './thirdGallery';
 import ThirdCarouselImg1 from '../../assets/thridImages/thirdcarouselImg1.png'
 import ThirdCarouselImg2 from '../../assets/thridImages/thirdcarouselImg2.png'
-
+import bigImg from '../../assets/images/aboutBackImg.png'
 import thirdIcon from '../../assets/thridImages/icon1.png'
 
 import Slider from "react-slick";
@@ -25,7 +25,10 @@ function Arrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", background: "black" }}
+            style={{
+                ...style, display: "block", background: "blue", position: 'absolute',
+                top: '700px', borderRadius: '50%'
+            }}
             onClick={onClick}
         />
     );
@@ -79,9 +82,9 @@ function Third() {
                     </p>
                 </div>
                 <div className="price-hour">
-                    <img src={PriceHour1} width={100} height={100} alt="" />
-                    <img src={PriceHour2} width={100} height={100} alt="" />
-                    <img src={PriceHour3} width={100} height={100} alt="" />
+                    <img src={PriceHour1}   alt="" />
+                    <img src={PriceHour2}   alt="" />
+                    <img src={PriceHour3}   alt="" />
                 </div>
             </div>
 
@@ -143,10 +146,36 @@ function Third() {
 
                 <div className="divs">
                     <div className='div-1'>Иностранным гражданам въезд в Абхазию ограничен, кроме граждан Украины, республик ДНР и ЛНР.</div>
+                    <br /><br />
+                    <br />
+                    <br />
                     <div className='div-1'>При возвращении из Абхазии в Россию сдавать ПЦР-тест не нужно, на карантин помещать не будут (Постановление Правительства РФ 1996-Р от 01.08.2020).</div>
                 </div>
             </div>
 
+
+            <div className="third-gallery">
+                <ThirdGallery />
+            </div>
+
+            <div className="carousel3">
+                <Carousel3 />
+            </div>
+
+
+            <div className="inputs-wrapper-img">
+                <div className="third-img">
+                    <img src={bigImg} alt="" />
+                </div>
+
+                <div className="third-inputs">
+                    <input type="text" value={'10 ноября 2021'} />
+                    <br /> <input type="text" value={'5 взрослых'} />
+                    <br /><input type="text" value={'Количество детей'} />
+                    <br /><button className='info-btn'>Забронировать</button>
+                </div>
+
+            </div>
         </div>
 
 
