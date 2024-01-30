@@ -190,6 +190,11 @@
                padding: 30px;
             }
 
+            button {
+            @extend %info-btn;
+            margin-top: 50px;
+            }
+
          }
 
          h2 {

@@ -6,11 +6,19 @@ import geolocationImg from '../../assets/icons/map1.png'
 import calendarImg from '../../assets/icons/calen.png'
 import peopleImg from '../../assets/icons/people.png'
 import tourImg from '../../assets/images/tur.png'
- function Blog() {
+import { Link, useNavigate } from "react-router-dom";
+function Blog() {
+
+     const navigate = useNavigate()
+
+     const goToTeamsHash = () => {
+         navigate('/third')
+ 
+     }
 
      return (
 
-    <div className="blog-container">
+          <div className="blog-container">
                <div className="navbar-item">
                     <Item />
                </div>
@@ -129,6 +137,12 @@ import tourImg from '../../assets/images/tur.png'
                                    <br />
                                    <b>Золотое кольцо Абхазии (из Адлера)</b>
                                    <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+
+                                   <Link onClick={goToTeamsHash} to={'/third'}>
+                                        <button className="info-btn">Подробнее</button>
+                                   </Link>
+
+
                               </div>
                          </div>
                          <div className="content">
@@ -138,6 +152,12 @@ import tourImg from '../../assets/images/tur.png'
                                    <br />
                                    <b>Золотое кольцо Абхазии (из Адлера)</b>
                                    <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+
+
+                                   <Link onClick={goToTeamsHash} to={'/third'}>
+                                        <button className="info-btn">Подробнее</button>
+                                   </Link>
+
                               </div>
                          </div>
                          <div className="content">
@@ -147,6 +167,12 @@ import tourImg from '../../assets/images/tur.png'
                                    <br />
                                    <b>Золотое кольцо Абхазии (из Адлера)</b>
                                    <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+
+
+                                   <Link onClick={goToTeamsHash} to={'/third'}>
+                                        <button className="info-btn">Подробнее</button>
+                                   </Link>
+
                               </div>
                          </div>
 
@@ -158,6 +184,12 @@ import tourImg from '../../assets/images/tur.png'
                                    <br />
                                    <b>Золотое кольцо Абхазии (из Адлера)</b>
                                    <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+
+
+                                   <Link onClick={goToTeamsHash} to={'/third'}>
+                                        <button className="info-btn">Подробнее</button>
+                                   </Link>
+
                               </div>
                          </div>
                     </div>
@@ -168,9 +200,9 @@ import tourImg from '../../assets/images/tur.png'
                <div className="footer">
                     <Footer />
                </div>
-            
+
           </div>
-               );
+     );
 
 }
 

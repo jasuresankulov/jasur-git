@@ -7,7 +7,7 @@ import PriceHour1 from '../../assets/thridImages/priceHour1.png'
 import PriceHour2 from '../../assets/thridImages/priceHour2.png'
 import PriceHour3 from '../../assets/thridImages/priceHour3.png'
 import SecondImg from '../../assets/thridImages/secondImg.png'
-
+import ThirdFooter from './ThirdFooter';
 import Calendar from './Calendar';
 import ThirdGallery from './thirdGallery';
 import ThirdCarouselImg1 from '../../assets/thridImages/thirdcarouselImg1.png'
@@ -175,6 +175,10 @@ function Third() {
                     <br /><button className='info-btn'>Забронировать</button>
                 </div>
 
+            </div>
+
+            <div className="third-footer">
+                <ThirdFooter/>
             </div>
         </div>
 

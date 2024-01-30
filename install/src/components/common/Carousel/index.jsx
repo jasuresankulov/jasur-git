@@ -22,12 +22,7 @@ function Arrow(props) {
 
 
 function CarouselComponent() {
-    const navigate = useNavigate()
-
-    const goToTeamsHash = () => {
-        navigate('/third')
-
-    }
+     
     var settings = {
         dots: true,
         infinite: true,
@@ -67,35 +62,7 @@ function CarouselComponent() {
                         <img src={slid1} width={200} alt="" />
                         <div className="text-slides">
                             <b>Иван Иванов</b>
-                            <Link onClick={goToTeamsHash} to={'/third'}>
-                            <button>hhh</button>
-                            </Link>
-                            <br />
-                            <br />
-                            <br />
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, a architecto ducimus temporibus sequi aspernatur numquam, perferendis, deserunt laboriosam similique possimus beatae. Eum aliquam unde consequuntur consequatur? Repudiandae laboriosam perferendis rem quidem minima eveniet illum officiis unde! Molestias ducimus mollitia repellat amet beatae totam, iure commodi, architecto dignissimos, excepturi voluptatem!</p>
-                        </div>
-                    </div>
-                 </div>
-
-                 <div className="main-card">
-                    <div className="card">
-                        <img src={slid2} width={200} alt="" />
-                        <div className="text-slides">
-                            <b>Иван Иванов</b>
-                            <br />
-                            <br />
-                            <br />
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, a architecto ducimus temporibus sequi aspernatur numquam, perferendis, deserunt laboriosam similique possimus beatae. Eum aliquam unde consequuntur consequatur? Repudiandae laboriosam perferendis rem quidem minima eveniet illum officiis unde! Molestias ducimus mollitia repellat amet beatae totam, iure commodi, architecto dignissimos, excepturi voluptatem!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="main-card">
-                    <div className="card">
-                        <img src={slid1} width={200} alt="" />
-                        <div className="text-slides">
-                            <b>Иван Иванов</b>
+                           
                             <br />
                             <br />
                             <br />
@@ -130,7 +97,33 @@ function CarouselComponent() {
                     </div>
                 </div>
 
-             </Slider>
+                <div className="main-card">
+                    <div className="card">
+                        <img src={slid2} width={200} alt="" />
+                        <div className="text-slides">
+                            <b>Иван Иванов</b>
+                            <br />
+                            <br />
+                            <br />
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, a architecto ducimus temporibus sequi aspernatur numquam, perferendis, deserunt laboriosam similique possimus beatae. Eum aliquam unde consequuntur consequatur? Repudiandae laboriosam perferendis rem quidem minima eveniet illum officiis unde! Molestias ducimus mollitia repellat amet beatae totam, iure commodi, architecto dignissimos, excepturi voluptatem!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="main-card">
+                    <div className="card">
+                        <img src={slid1} width={200} alt="" />
+                        <div className="text-slides">
+                            <b>Иван Иванов</b>
+                            <br />
+                            <br />
+                            <br />
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, a architecto ducimus temporibus sequi aspernatur numquam, perferendis, deserunt laboriosam similique possimus beatae. Eum aliquam unde consequuntur consequatur? Repudiandae laboriosam perferendis rem quidem minima eveniet illum officiis unde! Molestias ducimus mollitia repellat amet beatae totam, iure commodi, architecto dignissimos, excepturi voluptatem!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </Slider>
 
 
         </div>

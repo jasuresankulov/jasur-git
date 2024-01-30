@@ -7,7 +7,7 @@ function ThirdItem() {
     const navigate = useNavigate()
 
     const goToTeamsHash = () => {
-        navigate('/about')
+        navigate('/blog')
     }
     return (
         <div className="nav-wrapper3">
@@ -40,7 +40,10 @@ function ThirdItem() {
 
                 <h1>ЗОЛОТОЕ КОЛЬЦО АБХАЗИИ
                     (ИЗ АДЛЕРА)</h1>
+                <Link onClick={goToTeamsHash} to={'/blog'}>
                     <button className="info-btn">К Экскурсиям</button>
+                </Link>
+
             </div>
 
             <Link to={'./blog'}>
